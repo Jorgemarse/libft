@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 16:54:42 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/19 18:01:18 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:22:18 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
      unsigned char) to the string b.
 */
 
-void	*ft_memset (void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned long int		i;
 	unsigned char			*text;
@@ -31,4 +31,3 @@ void	*ft_memset (void *b, int c, size_t len)
 	}
 	return (b);
 }
-

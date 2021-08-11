@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 20:02:28 by jorge             #+#    #+#             */
-/*   Updated: 2021/07/26 17:43:36 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:23:04 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	int	x;
+	int		x;
 
 	i = 0;
 	if (!*needle)
@@ -43,4 +43,3 @@ char	*ft_strnstr(char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-

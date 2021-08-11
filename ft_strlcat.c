@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 18:18:48 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/23 12:24:38 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:22:43 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_strlcat(char	*dest, const char	*src, size_t	size)
 {
 	size_t	i;
 	size_t	j;
-	int				count;
+	int		count;
 
 	count = 0;
 	i = 0;

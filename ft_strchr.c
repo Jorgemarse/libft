@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 17:37:13 by jorge             #+#    #+#             */
-/*   Updated: 2021/08/02 13:53:17 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:22:29 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ char	*ft_strchr(char *s, int c)
 	len = ft_strlen(s);
 	t = (char *)s;
 	if (!s)
-		return(0);
+		return (0);
 	while ((i < len) && (t[i] != (char)c))
 		i++;
 	if (i == len)
 	{
 		if (c != '\0')
-			return(0);
+			return (0);
 	}
 	return ((char *)t + i);
 }

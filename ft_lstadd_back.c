@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back                                     :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/19 21:03:46 by jorge             #+#    #+#             */
-/*   Updated: 2021/07/21 20:04:51 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:12:37 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
     Add the new element in the end of the list.
 */
 
-void    ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-    if(lst != NULL && new != NULL)
-    {
-        if(*lst == NULL)
-            *lst = new;
-        else
-            (ft_lstlast(*lst))->next = new;
-    }
+	if (lst != NULL && new != NULL)
+	{
+		if (*lst == NULL)
+			*lst = new;
+		else
+			(ft_lstlast(*lst))->next = new;
+	}
 }

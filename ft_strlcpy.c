@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:43:02 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/23 12:23:46 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:22:49 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
     the same input parameters and output result as snprintf(3).
 */
 
-int	ft_strlcpy (char	*dest, const char	*src, size_t size)
+int	ft_strlcpy(char	*dest, const char	*src, size_t size)
 {
 	int				i;
 	unsigned int	j;

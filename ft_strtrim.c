@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 18:48:34 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/23 12:26:04 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:23:13 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,3 @@ char	*ft_strtrim(char const *s1, char *set)
 	buffer = ft_substr(s1, 0, i + 1);
 	return (buffer);
 }
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 19:35:28 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/26 17:32:04 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:23:08 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,3 @@ char	*ft_strrchr(char *s, int c)
 		return ((char *)str + i);
 	return (0);
 }
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 19:27:19 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/02 13:42:24 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:21:43 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,3 @@ void	*ft_memccpy(void *dst, void *src, int c, size_t n)
 	}
 	return (0);
 }
-

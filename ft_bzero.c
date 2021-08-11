@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 17:58:21 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/19 17:36:30 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/11 18:09:47 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
      zero, bzero() does nothing.
 */
 
-void	ft_bzero (void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char			*text;
 	unsigned long int		i;
