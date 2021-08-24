@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:39:57 by jorge             #+#    #+#             */
-/*   Updated: 2021/08/11 18:09:28 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/08/18 21:22:29 by jorge            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,25 @@
 int	ft_atoi(const char *str)
 {
 	int	N;
+	int	i;
 	int	num;
 
 	N = 0;
+	i = 0;
 	num = 0;
-	while (*str == 32 || (*str >= 9 && *str <= 13))
-		str++;
-	while (*str == '-' || *str == '+')
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
-		if (*str == '-')
+		if (str[i] == '-')
 			N++;
-		str++;
+		i++;
 	}	
-	while (*str >= '0' && *str <= '9')
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		num *= 10;
-		num += (int)*str - '0';
-		str++;
+		num += (int)str[i] - '0';
+		i++;
 	}
 	if (N % 2 != 0)
 		num = num * (-1);

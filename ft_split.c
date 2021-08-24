@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 18:34:47 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/11 20:17:43 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/08/18 20:21:51 by jorge            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+Return a reserve memory of strings splits "s" 
+with the character "c". Must end with null.
+*/
 
 size_t	ft_strlen2(char const *s, char c)
 {
@@ -19,11 +24,16 @@ size_t	ft_strlen2(char const *s, char c)
 
 	i = 0;
 	len = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		while (s[i] != c)
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
+		{
+			while (s[i] && s[i] != c)
+				i++;
 			len++;
-		i++;
+		}
 	}
 	return (len);
 }
@@ -35,15 +45,14 @@ char	**ft_split(char const *s, char c)
 	int			start;
 	char		**buffer;
 
-	i = 0;
-	j = 0;
-	start = 0;
 	if (!s)
 		return (0);
 	buffer = (char **)malloc(sizeof(char *) * (ft_strlen2(s, c)) + 1);
 	if (!buffer)
 		return (0);
-	while (s[i] != '\0')
+	i = 0;
+	j = 0;
+	while (i < ft_strlen(s))
 	{
 		if (s[i] && s[i] != c)
 		{
