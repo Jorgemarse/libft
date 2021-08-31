@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 19:35:28 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/11 18:23:08 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/08/24 17:52:39 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ char	*ft_strrchr(char *s, int c)
 	}
 	if (str[i] == (unsigned char)c)
 		return ((char *)str + i);
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 18:10:25 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/11 18:22:36 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/08/24 17:51:20 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	i = 0;
 	j = 0;
 	if (!s1 || !s2)
-		return (0);
+		return (NULL);
 	buffer = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!buffer)
-		return (0);
+		return (NULL);
 	while (i < ft_strlen(s1))
 	{
 		buffer[i] = s1[i];

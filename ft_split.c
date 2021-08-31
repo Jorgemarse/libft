@@ -6,7 +6,7 @@
 /*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 18:34:47 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/18 20:21:51 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/31 14:16:10 by jorge            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ char	**ft_split(char const *s, char c)
 	char		**buffer;
 
 	if (!s)
-		return (0);
-	buffer = (char **)malloc(sizeof(char *) * (ft_strlen2(s, c)) + 1);
+		return (NULL);
+	buffer = malloc(sizeof(char *) * (ft_strlen2(s, c) + 1));
 	if (!buffer)
-		return (0);
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (i < ft_strlen(s))

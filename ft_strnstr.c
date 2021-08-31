@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 20:02:28 by jorge             #+#    #+#             */
-/*   Updated: 2021/08/11 18:23:04 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/08/24 17:52:27 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,5 @@ char	*ft_strnstr(char *haystack, const char *needle, size_t len)
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

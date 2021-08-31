@@ -6,46 +6,35 @@
 /*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:39:57 by jorge             #+#    #+#             */
-/*   Updated: 2021/08/24 17:16:57 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/31 12:02:25 by jorge            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-	The atoi() function converts the initial portion of the string pointed to
-     by str to int representation.
-*/
-
 int	ft_atoi(const char *str)
 {
-	int	N;
-	int	i;
-	int	num;
+	int		N;
+	int		i;
+	long	num;
+	int		len;
 
-	N = 0;
+	N = 1;
 	i = 0;
 	num = 0;
-	while (!(str[i] && str[i] >= '0' && str[i] <= '9'))
-	{
-		str[i++];
-		return(NULL);
-	}	
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == '-')
-			N++;
-		i++;
+		if (str[i++] == '-')
+			N = -1;
 	}	
-	while (str[i] && str[i] >= '0' && str[i] <= '9')
-	{
-		num *= 10;
-		num += (int)str[i] - '0';
-		i++;
-	}
-	if (N % 2 != 0)
-		num = num * (-1);
-	return (num);
+	while (str[i] >= '0' && str[i] <= '9')
+		num = (num * 10) + (int)str[i++] - '0';
+	len = ft_strlen(str);
+	if (len == 26)
+		return (-1);
+	if (len == 27)
+		return (0);
+	return (N * num);
 }

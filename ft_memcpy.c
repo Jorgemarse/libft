@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 19:07:20 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/11 18:21:52 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/08/24 19:44:00 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,15 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char		*dest;
-	unsigned char		*sourc;
-	unsigned long int	i;
+	char				*dest;
+	char				*sourc;
+	size_t				i;
 
-	dest = (unsigned char *)dst;
-	sourc = (unsigned char *)src;
+	dest = (char *)dst;
+	sourc = (char *)src;
 	i = 0;
+	if (n == 0 || dst == sourc)
+		return (dst);
 	while (i < n)
 	{
 		dest[i] = sourc[i];

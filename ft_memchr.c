@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 19:10:25 by jormarti          #+#    #+#             */
-/*   Updated: 2021/07/19 17:54:34 by jorge            ###   ########.fr       */
+/*   Updated: 2021/08/24 17:46:18 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((char *)s + i);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
