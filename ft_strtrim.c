@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 18:48:34 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/11 18:23:13 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/01 19:35:05 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 	at the begining and at the end. 
 */
 
-char	*ft_strtrim(char const *s1, char *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	char	*buffer;

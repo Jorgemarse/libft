@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 19:35:28 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/24 17:52:39 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/01 19:38:51 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
     last occurrence of c.
 */
 
-char	*ft_strrchr(char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int			i;
 	char		*str;

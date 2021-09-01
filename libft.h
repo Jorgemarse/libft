@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/19 19:48:12 by jorge             #+#    #+#             */
-/*   Updated: 2021/08/24 21:19:00 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/01 19:39:12 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,15 @@ int		ft_isascii(int n);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 void	*ft_memccpy(void *dst, void *src, int c, size_t n);
-void	*ft_memchr(const void *s, int	c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
-char	*ft_strchr(char *s, int c);
+char	*ft_strchr(const char *s, int c);
 int		ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strrchr(char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(char *haystack, const char *needle, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
@@ -55,7 +55,7 @@ char	*ft_strdup(const char *s1);
 int		ft_strlcpy(char *dest, const char *src, size_t size);
 int		ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strjoin(const char *s1, const char *s2);
-char	*ft_strtrim(char const *s1, char *set);
+char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_itoa(int n);
 t_list	*ft_lstnew(void *content);
