@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 20:13:32 by jormarti          #+#    #+#             */
-/*   Updated: 2021/09/01 19:42:36 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:09:08 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	if (!s)
 		return (NULL);
-	size = (size_t)ft_strlen(s);
+	size = ft_strlen(s);
 	if (size < start)
 		return (ft_strdup(""));
 	if (start + len > size)

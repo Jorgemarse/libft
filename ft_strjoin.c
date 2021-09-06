@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 18:10:25 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/24 17:51:20 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:09:50 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char		*buffer;
-	int			i;
-	int			j;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	j = 0;

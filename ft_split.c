@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jorge <jorge@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 18:34:47 by jormarti          #+#    #+#             */
-/*   Updated: 2021/08/31 14:16:10 by jorge            ###   ########.fr       */
+/*   Updated: 2021/09/06 17:23:20 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ with the character "c". Must end with null.
 
 size_t	ft_strlen2(char const *s, char c)
 {
-	int		i;
-	size_t	len;
+	size_t		i;
+	size_t		len;
 
 	i = 0;
 	len = 0;
@@ -40,10 +40,10 @@ size_t	ft_strlen2(char const *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int			i;
-	int			j;
-	int			start;
-	char		**buffer;
+	size_t			i;
+	size_t			j;
+	int				start;
+	char			**buffer;
 
 	if (!s)
 		return (NULL);

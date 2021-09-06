@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 17:37:13 by jorge             #+#    #+#             */
-/*   Updated: 2021/09/01 19:39:21 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:21:48 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int			i;
-	int			len;
-	char		*t;
+	size_t			i;
+	size_t			len;
+	char			*t;
 
 	i = 0;
 	len = ft_strlen(s);

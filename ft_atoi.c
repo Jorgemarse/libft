@@ -6,7 +6,7 @@
 /*   By: jormarti <jormarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 12:39:57 by jorge             #+#    #+#             */
-/*   Updated: 2021/09/01 18:07:12 by jormarti         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:10:36 by jormarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_atoi(const char *str)
 	int		n;
 	int		i;
 	long	num;
-	int		len;
+	size_t	len;
 
 	n = 1;
 	i = 0;
